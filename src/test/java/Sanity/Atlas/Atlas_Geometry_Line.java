@@ -69,7 +69,7 @@ public class Atlas_Geometry_Line {
 	        }
 	        WebElement emailInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='email']")));
 	        if (emailInput != null && emailInput.isDisplayed()) {
-	            emailInput.sendKeys("softwaretestingteam9@gmail.com");
+	            emailInput.sendKeys("teamsoftware457@gmail.com");
 	            System.out.println("Email was entered successfully.");
 	        } else {
 	           System.out.println("Email was not entered.");
@@ -232,7 +232,7 @@ public class Atlas_Geometry_Line {
 			
 			 
 			 try {
-		  		    WebElement contributor= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='radio'])[2]")));
+		  		    WebElement contributor= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='radio'])[3]")));
 		  		    contributor.click();
 		  		    System.out.println("contributor selected successfully.");
 		  		    Thread.sleep(2000);
@@ -312,6 +312,7 @@ public class Atlas_Geometry_Line {
 			clickElementByXpath("//button[text()='Delete']", "Delete button");
 			clickElementByXpath("//a[@title='Save']", "save");
 			System.out.println("Line region deleted successfully");
+			clickElementByXpath("//a[@title='Close']", "Close");
 		}
 		
 		
